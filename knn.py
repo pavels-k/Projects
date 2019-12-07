@@ -7,7 +7,7 @@ y = [1, 0, 2, 5, 3, 2, 2, 7, 9, 3, 0, 2, 4, 1]
 z = [1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1]
 point = [3, 3]
 
-k = 3
+k = 2
 a = []
 for i in range(len(x)):
     distance = math.sqrt((point[0] - x[i])**2 + (point[1] - y[i])**2)

@@ -18,6 +18,7 @@ def cosinus(X_test, X_train, i, j):
 
 x = [[7,1], [1,0],[3,2],[3,5], [1,3],[0,2],[3,2],[8,7],[2,9],[3,3],[3,0],[3,2], [5,6], [6,3]]
 z = [1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 1]
+print(z)
 X_train, X_test, y_train, y_test = train_test_split(x, z, test_size=0.5, random_state=10)
 
 k = 2
@@ -26,7 +27,7 @@ y_knn = []
 for i in range(len(X_test)):
     a = []
     for j in range(len(X_train)):
-        distance = evk(X_test, X_train, i, j)
+        distance = cosinus(X_test, X_train, i, j)
         a.append([distance, y_train[j]])
     
     a = sorted(a, key=lambda c: c[0])
