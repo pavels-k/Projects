@@ -1,4 +1,4 @@
 
-.ipynb_checkpoints/football_predictions-checkpoint.ipynb
+.ipynb_checkpoints*
 .gitattributes
 .gitignore
