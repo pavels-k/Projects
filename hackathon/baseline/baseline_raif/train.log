@@ -1,0 +1,401 @@
+2021-09-24 20:20:06,030 __main__     INFO     START train.py
+2021-09-24 20:20:16,819 __main__     INFO     START train.py
+2021-09-24 20:41:35,977 __main__     INFO     START predict.py
+2021-09-24 20:41:35,979 __main__     INFO     Load test df
+2021-09-24 20:41:35,994 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 41, in <module>
+    test_df = pd.read_csv(args['d'])
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas\_libs\parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '/path/to/test/data'
+
+2021-09-24 20:42:19,364 __main__     INFO     START predict.py
+2021-09-24 20:42:19,366 __main__     INFO     Load test df
+2021-09-24 20:42:19,368 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 41, in <module>
+    test_df = pd.read_csv(args['d'])
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas\_libs\parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '/path/to/test/data'
+
+2021-09-24 20:46:16,069 __main__     INFO     START predict.py
+2021-09-24 20:46:16,071 __main__     INFO     Load test df
+2021-09-24 20:46:16,073 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 41, in <module>
+    test_df = pd.read_csv(args['d'])
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas\_libs\parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '/data/test_submission.csv'
+
+2021-09-24 20:47:09,306 __main__     INFO     START predict.py
+2021-09-24 20:47:09,308 __main__     INFO     Load test df
+2021-09-24 20:47:09,315 __main__     INFO     Input shape: (2974, 2)
+2021-09-24 20:47:09,343 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 46, in <module>
+    test_df = prepare_categorical(test_df)
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\features.py", line 12, in prepare_categorical
+    df_new[fillna_cols] = df_new[fillna_cols].fillna(UNKNOWN_VALUE)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\frame.py", line 2912, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1254, in _get_listlike_indexer
+    self._validate_read_indexer(keyarr, indexer, axis, raise_missing=raise_missing)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1298, in _validate_read_indexer
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['region', 'city', 'street', 'realty_type'], dtype='object')] are in the [columns]"
+
+2021-09-24 20:48:08,094 __main__     INFO     START predict.py
+2021-09-24 20:48:08,096 __main__     INFO     Load test df
+2021-09-24 20:48:08,133 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 20:48:08,140 __main__     INFO     Load model
+2021-09-24 20:48:08,141 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 120, in load
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/raif_hack/model.py'
+
+2021-09-24 20:49:21,602 __main__     INFO     START predict.py
+2021-09-24 20:49:21,604 __main__     INFO     Load test df
+2021-09-24 20:49:21,609 __main__     INFO     Input shape: (2974, 2)
+2021-09-24 20:49:21,614 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 46, in <module>
+    test_df = prepare_categorical(test_df)
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\features.py", line 12, in prepare_categorical
+    df_new[fillna_cols] = df_new[fillna_cols].fillna(UNKNOWN_VALUE)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\frame.py", line 2912, in __getitem__
+    indexer = self.loc._get_listlike_indexer(key, axis=1, raise_missing=True)[1]
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1254, in _get_listlike_indexer
+    self._validate_read_indexer(keyarr, indexer, axis, raise_missing=raise_missing)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexing.py", line 1298, in _validate_read_indexer
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['region', 'city', 'street', 'realty_type'], dtype='object')] are in the [columns]"
+
+2021-09-24 20:49:35,922 __main__     INFO     START predict.py
+2021-09-24 20:49:35,924 __main__     INFO     Load test df
+2021-09-24 20:49:35,962 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 20:49:35,966 __main__     INFO     Load model
+2021-09-24 20:49:35,966 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 120, in load
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/raif_hack/model.py'
+
+2021-09-24 20:50:09,699 __main__     INFO     START predict.py
+2021-09-24 20:50:09,701 __main__     INFO     Load test df
+2021-09-24 20:50:09,739 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 20:50:09,742 __main__     INFO     Load model
+2021-09-24 20:50:09,744 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 120, in load
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'model.py'
+
+2021-09-24 20:51:01,614 __main__     INFO     START predict.py
+2021-09-24 20:51:01,616 __main__     INFO     Load test df
+2021-09-24 20:51:01,656 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 20:51:01,660 __main__     INFO     Load model
+2021-09-24 20:51:01,661 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 121, in load
+    model = pickle.load(f)
+_pickle.UnpicklingError: could not find MARK
+
+2021-09-24 20:53:06,628 __main__     INFO     START predict.py
+2021-09-24 20:53:06,630 __main__     INFO     Load test df
+2021-09-24 20:53:06,668 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 20:53:06,672 __main__     INFO     Load model
+2021-09-24 20:53:06,673 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 120, in load
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'model.py'
+
+2021-09-24 20:54:40,586 __main__     INFO     START predict.py
+2021-09-24 20:57:13,841 __main__     INFO     START predict.py
+2021-09-24 20:57:13,843 __main__     INFO     Load test df
+2021-09-24 20:57:13,880 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 20:57:13,884 __main__     INFO     Load model
+2021-09-24 20:57:13,885 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 121, in load
+    model = pickle.load(f)
+_pickle.UnpicklingError: could not find MARK
+
+2021-09-24 21:16:27,742 __main__     INFO     START predict.py
+2021-09-24 21:16:27,744 __main__     INFO     Load test df
+2021-09-24 21:16:27,782 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 21:16:27,786 __main__     INFO     Load model
+2021-09-24 21:16:27,787 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 121, in load
+    model = pickle.load(f)
+_pickle.UnpicklingError: could not find MARK
+
+2021-09-24 21:16:37,070 __main__     INFO     START predict.py
+2021-09-24 21:16:37,072 __main__     INFO     Load test df
+2021-09-24 21:16:37,108 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 21:16:37,112 __main__     INFO     Load model
+2021-09-24 21:16:37,113 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 120, in load
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'settings.py'
+
+2021-09-24 21:17:21,813 __main__     INFO     START predict.py
+2021-09-24 21:17:21,815 __main__     INFO     Load test df
+2021-09-24 21:17:21,851 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 21:17:21,855 __main__     INFO     Load model
+2021-09-24 21:17:21,855 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 120, in load
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/raif_hack/settings.py'
+
+2021-09-24 21:18:00,672 __main__     INFO     START predict.py
+2021-09-24 21:18:00,674 __main__     INFO     Load test df
+2021-09-24 21:18:00,710 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 21:18:00,714 __main__     INFO     Load model
+2021-09-24 21:18:00,715 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 120, in load
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'settings.py'
+
+2021-09-24 21:18:28,447 __main__     INFO     START predict.py
+2021-09-24 21:18:28,449 __main__     INFO     Load test df
+2021-09-24 21:18:28,486 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 21:18:28,489 __main__     INFO     Load model
+2021-09-24 21:18:28,490 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 120, in load
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/settings.py'
+
+2021-09-24 21:18:37,435 __main__     INFO     START predict.py
+2021-09-24 21:18:37,437 __main__     INFO     Load test df
+2021-09-24 21:18:37,476 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 21:18:37,481 __main__     INFO     Load model
+2021-09-24 21:18:37,482 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 120, in load
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'settings.py'
+
+2021-09-24 21:19:15,256 __main__     INFO     START predict.py
+2021-09-24 21:19:15,258 __main__     INFO     Load test df
+2021-09-24 21:19:15,295 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 21:19:15,298 __main__     INFO     Load model
+2021-09-24 21:19:15,545 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 49, in <module>
+    model = BenchmarkModel.load(args['mp'])
+  File "C:\Users\Pavel\Desktop\Repositories\Projects\hackathon\baseline\baseline_raif\raif_hack\model.py", line 121, in load
+    model = pickle.load(f)
+_pickle.UnpicklingError: pickle data was truncated
+
+2021-09-24 21:21:12,699 __main__     INFO     START train.py
+2021-09-24 21:21:45,956 __main__     INFO     START train.py
+2021-09-24 21:22:15,944 __main__     INFO     START train.py
+2021-09-24 21:22:15,946 __main__     INFO     Load train df
+2021-09-24 21:22:15,984 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 21:22:15,999 __main__     ERROR    Traceback (most recent call last):
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexes\base.py", line 2898, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'per_square_meter_price'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "train.py", line 46, in <module>
+    y_offer = train_df[train_df.price_type == PriceTypeEnum.OFFER_PRICE][TARGET]
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\frame.py", line 2906, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexes\base.py", line 2900, in get_loc
+    raise KeyError(key) from err
+KeyError: 'per_square_meter_price'
+
+2021-09-24 21:23:27,653 __main__     INFO     START train.py
+2021-09-24 21:23:27,655 __main__     INFO     Load train df
+2021-09-24 21:23:27,695 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 21:23:27,710 __main__     ERROR    Traceback (most recent call last):
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexes\base.py", line 2898, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 70, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 101, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1675, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 1683, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'per_square_meter_price'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "train.py", line 46, in <module>
+    y_offer = train_df[train_df.price_type == PriceTypeEnum.OFFER_PRICE][TARGET]
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\frame.py", line 2906, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\indexes\base.py", line 2900, in get_loc
+    raise KeyError(key) from err
+KeyError: 'per_square_meter_price'
+
+2021-09-24 21:30:14,852 __main__     INFO     START train.py
+2021-09-24 21:30:14,854 __main__     INFO     Load train df
+2021-09-24 21:30:17,075 __main__     INFO     Input shape: (279792, 77)
+2021-09-24 21:30:17,457 __main__     INFO     X_offer (275299, 70)  y_offer (275299,)	X_manual (4493, 70) y_manual (4493,)
+2021-09-24 21:30:17,458 __main__     INFO     Fit model
+2021-09-24 21:30:17,458 raif_hack.model INFO     Fit lightgbm
+2021-09-24 21:32:50,588 raif_hack.model INFO     Find corr coefficient
+2021-09-24 21:32:51,463 raif_hack.model INFO     Corr coef: -0.12
+2021-09-24 21:32:51,463 __main__     INFO     Save model
+2021-09-24 21:33:49,468 __main__     INFO     Metrics stat for training data with offers prices: {'mape': 1.5204271589249925, 'mdape': 0.3125603548666643, 'rmse': 73946.13496006273, 'r2': 0.8172816627975483, 'raif_metric': 3.4943808614617957}
+2021-09-24 21:33:50,434 __main__     INFO     Metrics stat for training data with manual prices: {'mape': 0.30544381035322893, 'mdape': 0.24759116446089766, 'rmse': 73135.9256925428, 'r2': 0.3308659827460806, 'raif_metric': 2.0449581821903826}
+2021-09-24 21:33:50,434 __main__     INFO     END train.py
+2021-09-24 23:12:52,769 __main__     INFO     START train.py
+2021-09-24 23:12:52,771 __main__     INFO     Load train df
+2021-09-24 23:12:55,052 __main__     INFO     Input shape: (279792, 77)
+2021-09-24 23:12:55,442 __main__     INFO     X_offer (275299, 70)  y_offer (275299,)	X_manual (4493, 70) y_manual (4493,)
+2021-09-24 23:12:55,442 __main__     INFO     Fit model
+2021-09-24 23:12:55,442 raif_hack.model INFO     Fit lightgbm
+2021-09-24 23:17:04,615 __main__     INFO     START train.py
+2021-09-24 23:17:04,616 __main__     INFO     Load train df
+2021-09-24 23:17:06,821 __main__     INFO     Input shape: (279792, 77)
+2021-09-24 23:17:07,210 __main__     INFO     X_offer (275299, 70)  y_offer (275299,)	X_manual (4493, 70) y_manual (4493,)
+2021-09-24 23:17:07,211 __main__     INFO     Fit model
+2021-09-24 23:17:07,211 raif_hack.model INFO     Fit lightgbm
+2021-09-24 23:19:38,931 raif_hack.model INFO     Find corr coefficient
+2021-09-24 23:19:39,818 raif_hack.model INFO     Corr coef: -0.12
+2021-09-24 23:19:39,818 __main__     INFO     Save model
+2021-09-24 23:20:39,938 __main__     INFO     Metrics stat for training data with offers prices: {'mape': 1.5204271589249925, 'mdape': 0.3125603548666643, 'rmse': 73946.13496006273, 'r2': 0.8172816627975483, 'raif_metric': 3.4943808614617957}
+2021-09-24 23:20:40,892 __main__     INFO     Metrics stat for training data with manual prices: {'mape': 0.30544381035322893, 'mdape': 0.24759116446089766, 'rmse': 73135.9256925428, 'r2': 0.3308659827460806, 'raif_metric': 2.0449581821903826}
+2021-09-24 23:20:40,892 __main__     INFO     END train.py
+2021-09-24 23:33:42,165 __main__     INFO     START predict.py
+2021-09-24 23:33:42,167 __main__     INFO     Load test df
+2021-09-24 23:33:42,169 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 44, in <module>
+    test_df = pd.read_csv(args['d'])
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas\_libs\parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '/data/test.csv'
+
+2021-09-24 23:34:03,412 __main__     INFO     START predict.py
+2021-09-24 23:34:03,414 __main__     INFO     Load test df
+2021-09-24 23:34:03,416 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 44, in <module>
+    test_df = pd.read_csv(args['d'])
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\io\parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas\_libs\parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas\_libs\parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '/data/test.csv'
+
+2021-09-24 23:34:21,648 __main__     INFO     START predict.py
+2021-09-24 23:34:21,651 __main__     INFO     Load test df
+2021-09-24 23:34:21,689 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 23:34:21,693 __main__     INFO     Load model
+2021-09-24 23:34:21,759 __main__     INFO     Predict
+2021-09-24 23:34:21,940 __main__     INFO     Save results
+2021-09-24 23:34:21,955 __main__     INFO     END predict.py
+2021-09-24 23:43:29,000 __main__     INFO     START predict.py
+2021-09-24 23:43:29,002 __main__     INFO     Load test df
+2021-09-24 23:43:29,039 __main__     INFO     Input shape: (2974, 76)
+2021-09-24 23:43:29,043 __main__     INFO     Load model
+2021-09-24 23:43:29,769 __main__     INFO     Predict
+2021-09-24 23:43:29,790 __main__     ERROR    Traceback (most recent call last):
+  File "predict.py", line 51, in <module>
+    test_df['per_square_meter_price'] = model.predict(test_df[NUM_FEATURES+CATEGORICAL_OHE_FEATURES+CATEGORICAL_STE_FEATURES])
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\cluster\_birch.py", line 589, in predict
+    X = self._validate_data(X, accept_sparse='csr', reset=False)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py", line 421, in _validate_data
+    X = check_array(X, **check_params)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\validation.py", line 63, in inner_f
+    return f(*args, **kwargs)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\validation.py", line 673, in check_array
+    array = np.asarray(array, order=order, dtype=dtype)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\_asarray.py", line 83, in asarray
+    return array(a, dtype, copy=False, order=order)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\pandas\core\generic.py", line 1781, in __array__
+    return np.asarray(self._values, dtype=dtype)
+  File "C:\Users\Pavel\AppData\Local\Programs\Python\Python37\lib\site-packages\numpy\core\_asarray.py", line 83, in asarray
+    return array(a, dtype, copy=False, order=order)
+ValueError: could not convert string to float: 'Курская область'
+
+2021-09-25 00:24:49,001 __main__     INFO     START train.py
+2021-09-25 00:24:49,002 __main__     INFO     Load train df
+2021-09-25 00:24:51,266 __main__     INFO     Input shape: (279792, 77)
+2021-09-25 00:24:51,664 __main__     INFO     X_offer (275299, 70)  y_offer (275299,)	X_manual (4493, 70) y_manual (4493,)
+2021-09-25 00:24:51,664 __main__     INFO     Fit model
+2021-09-25 00:24:51,664 raif_hack.model INFO     Fit lightgbm
+2021-09-25 00:27:31,040 raif_hack.model INFO     Find corr coefficient
+2021-09-25 00:27:31,977 raif_hack.model INFO     Corr coef: -0.12
+2021-09-25 00:27:31,977 __main__     INFO     Save model
+2021-09-25 00:28:33,524 __main__     INFO     Metrics stat for training data with offers prices: {'mape': 1.5204271589249925, 'mdape': 0.3125603548666643, 'rmse': 73946.13496006273, 'r2': 0.8172816627975483, 'raif_metric': 3.4943808614617957}
+2021-09-25 00:28:34,475 __main__     INFO     Metrics stat for training data with manual prices: {'mape': 0.30544381035322893, 'mdape': 0.24759116446089766, 'rmse': 73135.9256925428, 'r2': 0.3308659827460806, 'raif_metric': 2.0449581821903826}
+2021-09-25 00:28:34,476 __main__     INFO     END train.py
+2021-09-25 00:29:42,387 __main__     INFO     START predict.py
+2021-09-25 00:29:42,389 __main__     INFO     Load test df
+2021-09-25 00:29:42,427 __main__     INFO     Input shape: (2974, 76)
+2021-09-25 00:29:42,431 __main__     INFO     Load model
+2021-09-25 00:29:42,504 __main__     INFO     Predict
+2021-09-25 00:29:42,686 __main__     INFO     Save results
+2021-09-25 00:29:42,702 __main__     INFO     END predict.py
