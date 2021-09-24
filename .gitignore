@@ -1,3 +1,6 @@
 
 .ipynb_checkpoints
 /hackathon/baseline/data/*
+hackathon/solution/test_submission.csv
+hackathon/solution/test.csv
+hackathon/solution/train.csv

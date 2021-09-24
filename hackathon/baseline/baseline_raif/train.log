@@ -399,3 +399,46 @@ ValueError: could not convert string to float: 'Курская область'
 2021-09-25 00:29:42,504 __main__     INFO     Predict
 2021-09-25 00:29:42,686 __main__     INFO     Save results
 2021-09-25 00:29:42,702 __main__     INFO     END predict.py
+2021-09-25 01:02:10,944 __main__     INFO     START train.py
+2021-09-25 01:02:10,946 __main__     INFO     Load train df
+2021-09-25 01:02:13,209 __main__     INFO     Input shape: (279792, 77)
+2021-09-25 01:02:13,624 __main__     INFO     X_offer (275299, 70)  y_offer (275299,)	X_manual (4493, 70) y_manual (4493,)
+2021-09-25 01:02:13,624 __main__     INFO     Fit model
+2021-09-25 01:02:13,625 raif_hack.model INFO     Fit lightgbm
+2021-09-25 01:04:50,475 raif_hack.model INFO     Find corr coefficient
+2021-09-25 01:04:51,417 raif_hack.model INFO     Corr coef: -0.12
+2021-09-25 01:04:51,418 __main__     INFO     Save model
+2021-09-25 01:05:52,951 __main__     INFO     Metrics stat for training data with offers prices: {'mape': 1.5204271589249925, 'mdape': 0.3125603548666643, 'rmse': 73946.13496006273, 'r2': 0.8172816627975483, 'raif_metric': 3.4943808614617957}
+2021-09-25 01:05:53,899 __main__     INFO     Metrics stat for training data with manual prices: {'mape': 0.30544381035322893, 'mdape': 0.24759116446089766, 'rmse': 73135.9256925428, 'r2': 0.3308659827460806, 'raif_metric': 2.0449581821903826}
+2021-09-25 01:05:53,899 __main__     INFO     END train.py
+2021-09-25 01:06:05,125 __main__     INFO     START predict.py
+2021-09-25 01:06:05,127 __main__     INFO     Load test df
+2021-09-25 01:06:05,164 __main__     INFO     Input shape: (2974, 76)
+2021-09-25 01:06:05,168 __main__     INFO     Load model
+2021-09-25 01:06:05,240 __main__     INFO     Predict
+2021-09-25 01:06:05,422 __main__     INFO     Save results
+2021-09-25 01:06:05,438 __main__     INFO     END predict.py
+2021-09-25 01:24:59,229 __main__     INFO     START train.py
+2021-09-25 01:24:59,231 __main__     INFO     Load train df
+2021-09-25 01:25:01,648 __main__     INFO     Input shape: (279792, 77)
+2021-09-25 01:25:02,103 __main__     INFO     X_offer (275299, 70)  y_offer (275299,)	X_manual (4493, 70) y_manual (4493,)
+2021-09-25 01:25:02,104 __main__     INFO     Fit model
+2021-09-25 01:25:02,104 raif_hack.model INFO     Fit lightgbm
+2021-09-25 01:27:41,175 raif_hack.model INFO     Find corr coefficient
+2021-09-25 01:27:42,084 raif_hack.model INFO     Corr coef: -0.12
+2021-09-25 01:27:42,084 __main__     INFO     Save model
+2021-09-25 01:28:48,059 __main__     INFO     Metrics stat for training data with offers prices: {'mape': 1.5204271589249925, 'mdape': 0.3125603548666643, 'rmse': 73946.13496006273, 'r2': 0.8172816627975483, 'raif_metric': 3.4943808614617957}
+2021-09-25 01:28:49,101 __main__     INFO     Metrics stat for training data with manual prices: {'mape': 0.30544381035322893, 'mdape': 0.24759116446089766, 'rmse': 73135.9256925428, 'r2': 0.3308659827460806, 'raif_metric': 2.0449581821903826}
+2021-09-25 01:28:49,101 __main__     INFO     END train.py
+2021-09-25 01:33:04,483 __main__     INFO     START train.py
+2021-09-25 01:33:04,485 __main__     INFO     Load train df
+2021-09-25 01:33:06,776 __main__     INFO     Input shape: (279792, 77)
+2021-09-25 01:33:07,201 __main__     INFO     X_offer (275299, 70)  y_offer (275299,)	X_manual (4493, 70) y_manual (4493,)
+2021-09-25 01:33:07,201 __main__     INFO     Fit model
+2021-09-25 01:33:07,201 raif_hack.model INFO     Fit lightgbm
+2021-09-25 01:33:23,068 __main__     INFO     START train.py
+2021-09-25 01:33:23,075 __main__     INFO     Load train df
+2021-09-25 01:33:25,588 __main__     INFO     Input shape: (279792, 77)
+2021-09-25 01:33:26,047 __main__     INFO     X_offer (275299, 70)  y_offer (275299,)	X_manual (4493, 70) y_manual (4493,)
+2021-09-25 01:33:26,048 __main__     INFO     Fit model
+2021-09-25 01:33:26,048 raif_hack.model INFO     Fit lightgbm

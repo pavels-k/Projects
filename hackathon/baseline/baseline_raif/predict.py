@@ -25,12 +25,15 @@ def parse_args():
         formatter_class=argparse.RawTextHelpFormatter,
     )
 
-    parser.add_argument("--test_data", "-d", type=str, dest="d", required=True, help="Путь до отложенной выборки")
+    parser.add_argument("--test_data", "-d", type=str, dest="d",
+                        required=True, help="Путь до отложенной выборки")
     parser.add_argument("--model_path", "-mp", type=str, dest="mp", required=True,
                         help="Пусть до сериализованной ML модели")
-    parser.add_argument("--output", "-o", type=str, dest="o", required=True, help="Путь до выходного файла")
+    parser.add_argument("--output", "-o", type=str, dest="o",
+                        required=True, help="Путь до выходного файла")
 
     return parser.parse_args()
+
 
 if __name__ == "__main__":
 
@@ -45,9 +48,11 @@ if __name__ == "__main__":
         logger.info('Load model')
         model = BenchmarkModel.load(args['mp'])
         logger.info('Predict')
-        test_df['per_square_meter_price'] = model.predict(test_df[NUM_FEATURES+CATEGORICAL_OHE_FEATURES+CATEGORICAL_STE_FEATURES])
+        test_df['per_square_meter_price'] = model.predict(
+            test_df[NUM_FEATURES+CATEGORICAL_OHE_FEATURES+CATEGORICAL_STE_FEATURES])
         logger.info('Save results')
-        test_df[['id','per_square_meter_price']].to_csv(args['o'], index=False)
+        test_df[['id', 'per_square_meter_price']].to_csv(
+            args['o'], index=False)
     except Exception as e:
         err = format_exc()
         logger.error(err)
