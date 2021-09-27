@@ -11,4 +11,4 @@
 python train.py --train_data ../data/train.csv --model_path my.sav
 
 Для predict:
-python predict.py --model_path my.sav --test_data ../data/test.csv --output my_test_submission.csv
+python predict.py --model_path my.sav --test_data ../data/test.csv --output test_submission.csv
