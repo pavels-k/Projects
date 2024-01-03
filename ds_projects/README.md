@@ -1,9 +1,9 @@
-# Основные проекты Яндекс.Практикум "Специалист по Data Science"
+# The main Yandex.Practicum projects. Workshop "Data Science Specialist"
 
-Проекты, выполнены в рамках обучения в Яндекс.Практикуме по профессии "Аналитик данных" / "Специалист по Data Science" с ноября 2021 по июль 2022 года.
+The projects were completed as part of the training at Yandex.Practicum. A workshop on the profession of "Data Science Specialist" from November 2021 to July 2022.
 
-| Название проекта | Описание | Инструменты и навыки | 
+| Project name | Description | Tools and skills | 
 | :---------------------- | :---------------------- | :---------------------- |
-| [Изучение закономерностей, определяющих успешность игр](success_games) | Используя исторические данные о продажах компьютерных игр, оценки пользователей и экспертов, жанры и платформы, выявить закономерности, определяющие успешность игры  | *python, pandas, numpy, seaborn, matplotlib, scipy, предобработка данных, исследовательский анализ данных, описательная статистика, проверка статистических гипотез* |
-| [Подготовка прототипа модели для металлообрабатывающего предприятия](metalworking_enterprise) | Разработка модели, предсказывающей коэффициент восстановления золота из золотосодержащей руды | *pandas, sklearn, seaborn, matplotlib, машинное обучение* |
-| [Разработка алгоритма для оттока клиентов телекома](outflow_operator_customers) | Научиться прогнозировать отток клиентов телекома| *pandas, seaborn, numpy, sklearn, lightgbm, машинное обучение* |
+| [Studying the patterns that determine the success of games](success_games) | Using historical data on sales of computer games, user and expert ratings, genres and platforms, to identify patterns that determine the success of the game  | *python, pandas, numpy, seaborn, matplotlib, scipy, data preprocessing, research data analysis, descriptive statistics, statistical hypothesis testing* |
+| [Preparation of a prototype model for a metalworking enterprise](metalworking_enterprise) | Development of a model predicting the recovery rate of gold from gold-bearing ore | *pandas, sklearn, seaborn, matplotlib, machine learning* |
+| [Development of an algorithm for the outflow of telecom customers](outflow_operator_customers) | Learn how to predict the outflow of telecom customers| *pandas, seaborn, numpy, sklearn, lightgbm, machine learning* |
